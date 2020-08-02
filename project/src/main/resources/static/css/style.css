@@ -88,10 +88,9 @@ main a{
 }
 
 main {
-    background:  url(static/img/Denali_Logo-01.jpg);
+    background: url(/img/Denali_Logo-01.jpg) no-repeat center;
+    background-size: contain;
     background-size: 70%;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 main button {
