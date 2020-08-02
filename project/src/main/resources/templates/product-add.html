@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org"
+       xmlns:sec='http://www.thymeleaf.org/extras/spring-security'>
+
+<head>
+    <th:block th:include="~{/fragments/header}"></th:block>
+</head>
+
+<body>
+
+    <header>
+        <th:block th:include="~{/fragments/nav}"></th:block>
+    </header>
+
+    <main>
+        <!-- 
+        <h1><a href="best.html">Welcome to Denali Center</a></h1>
+
+        <button class="button"><a href="user-login.html">Take me to the store!</a></button> -->
+
+        <h1 class="text-center mt-2" style="padding: 30px 0px 180px 0px;"><span class="badge badge-pill badge-dark"
+                style="background-color: maroon; border-radius: 0.3em;">Add product</span></h1>
+        <hr class="hr-3 w-25 bg-dark" />
+        <form class="mx-auto w-25 bg-blur rounded" method="POST" th:action="@{/users/register}">
+            <div class="form-group">
+                <div class="label-holder textCol d-flex justify-content-center">
+                    <label for="category" class="badge badge-pill badge-dark">Category</label>
+                </div>
+                <input type="text" class="form-control" id="category" name="category" />
+                <small class="text-danger" style="margin-left: 140px;">Category error message</small>
+            </div>
+            <div class="form-group">
+                <div class="label-holder text-white textCol d-flex justify-content-center">
+                    <label for="name" class="badge badge-pill badge-dark">Name</label>
+                </div>
+                <input type="name" class="form-control" id="name" name="name" />
+
+                <small class="text-danger text-center" style="margin-left: 140px;">Name error message</small>
+            </div>
+            <div class="form-group">
+                <div class="label-holder text-white textCol d-flex justify-content-center">
+                    <label for="price" class="badge badge-pill badge-dark">Price</label>
+                </div>
+                <input type="price" class="form-control" id="price" name="price" />
+                <small class="text-danger" style="margin-left: 140px;">Price error message</small>
+            </div>
+
+
+            <div class="button-holder d-flex justify-content-center">
+                <button type="submit" class="btn btn-outline-dark btn-lg text-center" style="margin-left: inherit;"
+                    value="Add">Add</button>
+            </div>
+        </form>
+
+    </main>
+
+    <footer>
+        <th:block th:include="~{/fragments/footer}"></th:block>
+    </footer>
+
+
+
+</body>
+
+</html>

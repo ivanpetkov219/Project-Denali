@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org"
+       xmlns:sec='http://www.thymeleaf.org/extras/spring-security'>
+
+<head>
+    <th:block th:include="~{/fragments/header}"></th:block>
+</head>
+
+<body>
+
+    <header>
+        <th:block th:include="~{/fragments/nav}"></th:block>
+    </header>
+
+    <main>
+
+        <!-- <h1><a href="best.html">Welcome to Denali Center</a></h1>
+
+        <button class="button text-center" style="margin-bottom: 100px;"><a href="user-login.html">Take me to the store!</a></button> -->
+        <form style="text-align: center; display: inline-block; margin-left: 450px; margin-top: 300px;">
+            <div class="form-group tex">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                    else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                <small id="emailHelp" class="form-text text-muted">Password must be at least 3 characters!</small>
+            </div>
+
+            <button type="submit" class="btn btn-outline-dark btn-lg">Login</button>
+
+        </form>
+        <button type="submit" class="btn btn-outline-dark btn-lg" style="margin-top: 100px;"><a
+                href="user-register.html"</a>Register here if you don't have an account!</button>
+
+
+    </main>
+
+    <footer>
+        <th:block th:include="~{/fragments/footer}"></th:block>
+    </footer>
+
+
+
+</body>
+
+</html>
