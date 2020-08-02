@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec='http://www.thymeleaf.org/extras/spring-security'>
+<html xmlns:th="http://www.thymeleaf.org">
+<!--      xmlns:sec='http://www.thymeleaf.org/extras/spring-security'>-->
 
 <head>
-    <th:block th:include="~{/fragments/header}"></th:block>
+    <th:block th:include="fragments/header"></th:block>
 </head>
 
 <body>
 
-    <header>
-        <th:block th:include="~{/fragments/nav}"></th:block>
-    </header>
+<header>
+    <th:block th:include="/fragments/nav"></th:block>
+</header>
 
-    <main>
+<main>
 
-        <h1><a href="best.html">Welcome to Denali Center</a></h1>
+    <h1><a href="best.html">Welcome to Denali Center</a></h1>
 
-        <button class="button text-center" style="margin-bottom: 100px;"><a href="user-login.html">Take me to the store!</a></button>
+    <button class="button text-center" style="margin-bottom: 100px;"><a href="user-login.html">Take me to the store!</a>
+    </button>
 
-    </main>
+</main>
 
-    <footer">
-        <th:block th:include="~{/fragments/footer}"></th:block>
-    </footer>
-
+<footer>
+    <th:block th:include="~{/fragments/footer}"></th:block>
+</footer>
 
 
 </body>
